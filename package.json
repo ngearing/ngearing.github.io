@@ -1,0 +1,25 @@
+{
+    "name": "ngearing.github.io",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/ngearing/ngearing.github.io",
+    "author": "Nathan Gearing <natgearing@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "laravel-mix": "^2.1.11",
+        "parcel-bundler": "^1.8.1",
+        "webfontloader": "^1.6.28"
+    },
+    "scripts": {
+        "start": "parcel index.html",
+        "watch": "parcel watch index.html",
+        "webpack": "NODE_ENV=development webpack --progress --hide-modules --config node_modules/laravel-mix/setup/webpack.config.js",
+        "dev": "NODE_ENV=development webpack --watch --progress --hide-modules --config node_modules/laravel-mix/setup/webpack.config.js",
+        "hmr": "NODE_ENV=development webpack-dev-server --inline --hot --config node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "NODE_ENV=production webpack --progress --hide-modules --config node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.24.4",
+        "browser-sync-webpack-plugin": "2.0.1"
+    }
+}

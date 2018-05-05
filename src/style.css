@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #010101;
+    font-display: swap;
+    font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 4rem auto;
+    max-width: 632px;
+    padding: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-display: swap;
+    font-family: 'Noto Serif', Cambria, Cochin, Georgia, Times,
+        'Times New Roman', serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 8rem 0;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 2rem 0;
+}
+
+p {
+    line-height: 1.65;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+a {
+    color: #4e4e4e;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    padding-bottom: 2px;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+a:hover,
+a:active,
+a:focus {
+    border-bottom: 3px solid black;
+}
+
+.content {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.header {
+    margin-left: calc(40% + 2rem);
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.left {
+    text-align: right;
+    margin-right: 2rem;
+    width: 40%;
+}
+
+.left p {
+    font-display: swap;
+    font-family: 'Noto Serif', Cambria, Cochin, Georgia, Times,
+        'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.35;
+}
+
+.right {
+    flex: 1;
+}
+
+.right p {
+    color: #666;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0 4rem;
+}
+
+.footer .left {
+    text-align: center;
+}
+
+.footer ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer li {
+    margin-bottom: 0.4rem;
+}
+
+@media (min-width: 560px) {
+    .header h2 {
+        text-align: left;
+    }
+
+    .footer {
+        display: flex;
+        text-align: left;
+    }
+
+    .footer .left {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    h1 {
+        margin: 2rem 0;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .header {
+        margin-left: 0;
+    }
+
+    .left {
+        width: 100%;
+    }
+}
