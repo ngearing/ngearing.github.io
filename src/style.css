@@ -10,9 +10,9 @@ body {
         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    margin: 4rem auto;
-    max-width: 632px;
-    padding: 0 1rem;
+    /* margin: 4rem auto; */
+    /* max-width: 632px; */
+    /* padding: 0 1rem; */
 }
 
 h1,
@@ -35,7 +35,6 @@ h6 {
 h1 {
     font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 8rem 0;
     font-size: 3rem;
 }
 
@@ -63,9 +62,17 @@ a:focus {
     border-bottom: 3px solid black;
 }
 
+header {
+    display: flex;
+    padding: .5rem 1rem;
+}
+
 .content {
     display: flex;
     flex-flow: wrap;
+    margin: 4rem auto;
+    max-width: 640px;
+    padding: 0 2rem;
 }
 
 .header {
@@ -102,6 +109,8 @@ a:focus {
 .footer {
     text-align: center;
     padding: 2rem 0 4rem;
+    max-width: 640px;
+    margin: 0 auto;
 }
 
 .footer .left {
